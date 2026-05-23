@@ -6,27 +6,51 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>pet_center</title>
     <script type="module" src="/src/main.js"></script>
-
   </head>
-  <body>
-    <header>
-      <section>
-        <div id="hero-container">
-          <img id="hero-img" src="" alt="imagen principal">
+  <body class="flex flex-col justify-center items-center bg-slate-900">
+
+    <main
+      class="bg-amber-100 flex flex-col items-center justify-center w-19/20"
+    >
+      <section class=" relative w-full flex flex-col items-center justify-center">
+        <div class="w-full" id="hero-container">
+          <img
+            id="hero-img"
+            src="./src/assets/hero.jpg"
+            alt="imagen principal"
+          />
         </div>
-        <img id="profile" src="" alt="profile-picture">
+        <div class="absolute -mt-30 flex justify-center w-full">
+          <img
+            class="  w-1/3 rounded-full max-w-[200px]"
+            id="profile"
+            src="https://scontent.ftgu1-3.fna.fbcdn.net/v/t39.30808-6/642254684_1521549269972049_4925262067699597986_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH4DcGIjjHga_WPOQQ85kfbq78IN1paGservwg3Wloax5zQYLZF0yPZn5p6XZ7hW76HTGuuoMYwEXBDGmkIXpnX&_nc_ohc=dShM8MKdiQoQ7kNvwEYpMu3&_nc_oc=AdplPxBNQV-ExQKF6RFS951KlUu1wP77QUDCi224WREC0GQA-TeOFqkznGDrSC3smnSQrBpiHmgz67xrZoGa1TYC&_nc_zt=23&_nc_ht=scontent.ftgu1-3.fna&_nc_gid=wcILkFzAJ73GnYT-3AuK9Q&_nc_ss=7b2a8&oh=00_Af5absdD8FKunVJt7b_1Q1PQMsz9RyPgC-UD5VkOfx9gag&oe=6A17F95D"
+            alt="profile-picture"
+          />
+        </div>
+      </section>
+      <h1>Pet Center</h1>
+      <h2>Tu veterinaria de confianza</h2>
+      <section class="flex" id="logos-container">
+        <img src="" alt="logo fb" />
+        <img src="" alt="logo Ig" />
+        <img src="" alt="logo wh" />
+        <img src="" alt="logo tt" />
+        <img src="" alt="logo tw" />
       </section>
 
-    </header>
+      <div id="buttons">
+        <button class="border-2 border-amber-600"></button>
+        <button class="border-2 border-amber-600"></button>
+      </div>
 
-    <main>
-      <h1>Pet Center</h1>
-        <h2>Tu veterinaria de confianza
-        </h2>      
-        <section class=" flex" id="logos-container">
+      <section id="contact-us">
+        <img src="" alt="phone icon" />
+        <h3>Contact Us</h3>
 
-        </section>
+        <h3>Call Us</h3>
+        <address>+504 3259-0609</address>
+      </section>
     </main>
-
   </body>
 </html>
