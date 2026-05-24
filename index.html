@@ -7,12 +7,13 @@
     <title>pet_center</title>
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="flex flex-col justify-center items-center bg-slate-900">
-
+  <body class="h-screen flex flex-col justify-center items-center bg-slate-900">
     <main
       class="bg-amber-100 flex flex-col items-center justify-center w-19/20"
     >
-      <section class=" relative w-full flex flex-col items-center justify-center">
+      <section
+        class="relative w-full flex flex-col items-center justify-center"
+      >
         <div class="w-full" id="hero-container">
           <img
             id="hero-img"
@@ -20,23 +21,26 @@
             alt="imagen principal"
           />
         </div>
-        <div class="absolute -mt-38 flex justify-center w-full">
+        <div class="w-7/10 absolute -mt-38 flex justify-center">
           <img
-            class="  w-1/3 rounded-full max-w-[200px]"
+            class="w-1/2 rounded-full max-w-[200px]"
             id="profile"
             src="https://scontent.ftgu1-3.fna.fbcdn.net/v/t39.30808-6/642254684_1521549269972049_4925262067699597986_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH4DcGIjjHga_WPOQQ85kfbq78IN1paGservwg3Wloax5zQYLZF0yPZn5p6XZ7hW76HTGuuoMYwEXBDGmkIXpnX&_nc_ohc=dShM8MKdiQoQ7kNvwEYpMu3&_nc_oc=AdplPxBNQV-ExQKF6RFS951KlUu1wP77QUDCi224WREC0GQA-TeOFqkznGDrSC3smnSQrBpiHmgz67xrZoGa1TYC&_nc_zt=23&_nc_ht=scontent.ftgu1-3.fna&_nc_gid=wcILkFzAJ73GnYT-3AuK9Q&_nc_ss=7b2a8&oh=00_Af5absdD8FKunVJt7b_1Q1PQMsz9RyPgC-UD5VkOfx9gag&oe=6A17F95D"
             alt="profile-picture"
           />
         </div>
       </section>
-      <h1>Pet Center</h1>
-      <h2>Tu veterinaria de confianza</h2>
-      <section class="flex" id="logos-container">
-        <img src="" alt="logo fb" />
-        <img src="" alt="logo Ig" />
-        <img src="" alt="logo wh" />
-        <img src="" alt="logo tt" />
-        <img src="" alt="logo tw" />
+      <h1 class="text-3xl font-bold text-slate-900">Pet Center</h1>
+      <h2 class="text-sm"><em>Tu veterinaria de confianza</em></h2>
+      <section
+        class=" gap-10 bg-amber-600 h-15 items-center justify-center gap-1 mt-10 flex w-full"
+        id="logos-container"
+      >
+       <a href=""><img class="w-10" src="/icons/facebook.svg" alt="logo fb"
+        /></a>
+       <a href=""> <img class="w-10" src="/icons/instagram-1.svg" alt="logo Ig" /></a>
+       <a href="https://wa.me/50432590609"> <img class="w-10" src="/icons/whatsapp-color.svg" alt="logo wh" /></a>
+       <a href="https://www.tiktok.com/@petcenter822?_r=1&_t=ZS-96c8JI696QM"> <img class="w-10" src="/icons/tiktok-icon-white.svg" alt="logo tt" /></a>
       </section>
 
       <div id="buttons">
