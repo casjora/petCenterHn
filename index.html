@@ -7,7 +7,7 @@
     <title>pet_center</title>
     <script type="module" src="/src/main.js"></script>
   </head>
-  <body class="h flex flex-col justify-center items-center bg-slate-900">
+  <body class="flex flex-col justify-center items-center bg-slate-900">
     <main
       class="pb-10 bg-linear-to-r from-[#4fc0ce] to-[#037ea0] flex flex-col items-center justify-center w-19/20"
     >
@@ -15,38 +15,45 @@
         class="relative w-full flex flex-col items-center justify-center"
       >
         <div class="w-full" id="hero-container">
-          <img
-            id="hero-img"
-            src="./src/assets/hero.jpg"
-            alt="imagen principal"
-          />
+          <picture class="w-full">
+            <source
+              srcset="./src/assets/hero_lg.png"
+              media="(min-width: 768px)"
+            />
+            <img
+              id="hero-img"
+              class="w-full object-cover"
+              src="./src/assets/hero.jpg"
+              alt="imagen principal"
+            />
+          </picture>
         </div>
         <div class="w-7/10 absolute -mt-38 flex justify-center">
           <img
-            class="w-1/2 rounded-full max-w-50"
+            class="md:hidden w-1/2 rounded-full max-w-50"
             id="profile"
             src="https://scontent.ftgu1-3.fna.fbcdn.net/v/t39.30808-6/642254684_1521549269972049_4925262067699597986_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeH4DcGIjjHga_WPOQQ85kfbq78IN1paGservwg3Wloax5zQYLZF0yPZn5p6XZ7hW76HTGuuoMYwEXBDGmkIXpnX&_nc_ohc=dShM8MKdiQoQ7kNvwEYpMu3&_nc_oc=AdplPxBNQV-ExQKF6RFS951KlUu1wP77QUDCi224WREC0GQA-TeOFqkznGDrSC3smnSQrBpiHmgz67xrZoGa1TYC&_nc_zt=23&_nc_ht=scontent.ftgu1-3.fna&_nc_gid=wcILkFzAJ73GnYT-3AuK9Q&_nc_ss=7b2a8&oh=00_Af5absdD8FKunVJt7b_1Q1PQMsz9RyPgC-UD5VkOfx9gag&oe=6A17F95D"
             alt="profile-picture"
           />
         </div>
       </section>
-      <h1 class="text-3xl font-bold text-slate-900">Veterinaria Pet Center</h1>
-      <h2 class="text-sm"><em>Tu veterinaria de confianza</em></h2>
+      <h1 class="mt-5 md:text-6xl text-3xl font-bold text-slate-900">Veterinaria Pet Center</h1>
+      <h2 class="text-sm md:text-2xl"><em>Tu veterinaria de confianza</em></h2>
       <section
-        class="gap-10 bg-slate-300 h-15 items-center justify-center mt-10 flex w-full"
+        class=" md:h-30 gap-10 md:gap-20 bg-slate-300 h-15 items-center justify-center mt-10 flex w-full"
         id="logos-container"
       >
         <a href="https://www.facebook.com/PETCENTER1234/?locale=es_LA"
-          ><img class="w-10" src="/icons/facebook.svg" alt="logo fb"
+          ><img class=" md:w-22 w-10" src="/icons/facebook.svg" alt="logo fb"
         /></a>
         <a href="">
-          <img class="w-10" src="/icons/instagram-1.svg" alt="logo Ig"
+          <img class="md:w-22 w-10" src="/icons/instagram-1.svg" alt="logo Ig"
         /></a>
         <a href="https://wa.me/50432590609">
-          <img class="w-10" src="/icons/whatsapp-color.svg" alt="logo wh"
+          <img class="md:w-22 w-10" src="/icons/whatsapp-color.svg" alt="logo wh"
         /></a>
         <a href="https://www.tiktok.com/@petcenter822?_r=1&_t=ZS-96c8JI696QM">
-          <img class="w-10" src="/icons/tiktok-icon-white.svg" alt="logo tt"
+          <img class="md:w-22 w-10" src="/icons/tiktok-icon-white.svg" alt="logo tt"
         /></a>
       </section>
 
@@ -59,23 +66,22 @@
         class="flex flex-col justify-center items-center"
         id="contact-us"
       >
-        <h3 class="mt-10 p-2 font-bold text-2xl">&#128222; Contactanos</h3>
+        <h3 class=" md:text-5xl mt-10 p-2 font-bold text-2xl">&#128222; Contactanos</h3>
 
         <a
-          class="hover:text-blue-500 focus:text-blue-700 transition-colors duration-200 font-medium"
+          class=" md:text-2xl hover:text-blue-500 focus:text-blue-700 transition-colors duration-200 font-medium"
           href="tel:+50432590609"
           ><address>+504 3259-0609</address></a
         >
         <a
-          class="hover:text-blue-500 focus:text-blue-700 transition-colors duration-200 font-medium"
+          class="pt-2 md:text-2xl hover:text-blue-500 focus:text-blue-700 transition-colors duration-200 font-medium"
           href="tel:+50422810613"
           ><address>+504 2281-0613</address></a
         >
       </section>
-      <iframe class="mt-5"
+      <iframe
+        class=" mt-5 w-88 h-75 md:w-200 md:h-100"
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d8267.263568687898!2d-87.2370342829132!3d14.103951851951964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f6f991af2e72ca1%3A0x3807e66a09599a72!2sPet%20Center!5e0!3m2!1ses-419!2shn!4v1779747977396!5m2!1ses-419!2shn"
-        width="400"
-        height="300"
         style="border: 0"
         allowfullscreen=""
         loading="lazy"
